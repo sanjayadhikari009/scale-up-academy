@@ -1,83 +1,231 @@
 /* Landing Page Main Focus */
 .landingPage {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    background-color: #010101;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #010101;
+}
+.landingBackTexture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
+.landingBackImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landingTextWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.landingText {
+  text-align: center;
+  color: white;
+  width: 774.17px;
+}
+.landingBadge {
+  border: 1px solid white;
+  border-radius: 41px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 14px;
+  display: inline-block;
+  background: #427957;
+}
+
+.landingText h1 {
+  font-size: 75px;
+  font-weight: 800;
+  letter-spacing: 2%;
+}
+
+.headingText span {
+  color: var(--shadow);
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+}
+
+.headingText span::before {
+  animation-delay: 0.1s;
+}
+
+@media (prefers-reduced-motion) {
+  .headingText span {
+    color: var(--base);
+  }
+}
+.headingText span::before {
+  content: attr(data-text);
+
+  overflow: hidden;
+  position: absolute;
+  speak: none;
+
+  color: green;
+}
+.headingText .ani-one::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(65% at 50% 50%);
+
+  animation: max-width 8s ease-out infinite;
+}
+.headingText .ani-two::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  clip-path: circle(65% at 50% 50%);
+  animation: max-height 8s ease-out infinite;
+}
+.headingText .ani-three::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  clip-path: circle(65% at 50% 50%);
+  animation: width-right 8s ease-out infinite;
+}
+@media (prefers-reduced-motion) {
+  .headingText span::before {
+    animation: none;
+    content: "";
+  }
+}
+
+@keyframes max-width {
+  0% {
+    clip-path: circle(0 at -42% 50%);
+  }
+  50% {
+    clip-path: circle(65% at 50% 50%);
+  }
+  100% {
+    clip-path: circle(0 at -42% 50%);
+  }
+}
+@keyframes max-height {
+  0% {
+    clip-path: circle(0 at 50% 142%);
+  }
+  50% {
+    clip-path: circle(65% at 50% 50%);
+  }
+  100% {
+    clip-path: circle(0 at 50% 142%);
+  }
+}
+@keyframes width-right {
+  0% {
+    clip-path: circle(0 at 142% 50%);
+  }
+  50% {
+    clip-path: circle(70% at 50% 50%);
+  }
+  100% {
+    clip-path: circle(0 at 142% 50%);
+  }
+}
+.landingText p {
+  font-size: 33.39px;
+  line-height: 100%;
+  margin-top: -45px;
+}
+.landingText a {
+  text-decoration: none;
+  color: white;
+  font-size: 24.48px;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  /* background: rgba(255, 255, 255, 0.1);  */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: inline-block;
+}
 .offerCourses {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    overflow-x: scroll;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  overflow-x: scroll;
 }
 
 .offerCourses::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .offerCoursesList {
-    display: flex;
-    gap: 200px;
-    animation: moveCourses 15s linear infinite;
-    border-top: 0.1px solid rgba(255, 255, 255, 0.4);
-    border-bottom: 0.1px solid rgba(255, 255, 255, 0.4);
-    background-color: #020302;
-    height: 74px;
-    align-items: center;
-    width: fit-content;
+  display: flex;
+  gap: 200px;
+  animation: moveCourses 15s linear infinite;
+  border-top: 0.1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.4);
+  background-color: #020302;
+  height: 74px;
+  align-items: center;
+  width: fit-content;
 }
 
 .coursesOffer {
-    height: 36px;
-    border-radius: 20px;
-    border-top: 1px solid transparent;
-    border: 0.1px solid rgba(255, 255, 255, 0.24);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: white;
-    flex-shrink: 0;
-    padding: 0 14px;
+  height: 36px;
+  border-radius: 20px;
+  border-top: 1px solid transparent;
+  border: 0.1px solid rgba(255, 255, 255, 0.24);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  flex-shrink: 0;
+  padding: 0 14px;
 }
 
 .coursesOffer .circleOffer {
-    width: 8px;
-    height: 8px;
-    border-radius: 100%;
-    background-color: #09C60D;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #09c60d;
 }
 
 @keyframes moveCourses {
-    0% {
-        margin-left: 10px;
-    }
+  0% {
+    margin-left: 10px;
+  }
 
-    50% {
-        margin-left: -100%;
-    }
+  50% {
+    margin-left: -100%;
+  }
 
-    100% {
-        margin-left: 10px;
-    }
+  100% {
+    margin-left: 10px;
+  }
 }
-
 
 /* Responsive  */
-@media screen and (max-width:1200px) {
-
-    .offerCoursesList {
-        padding: 5px 15px;
-        gap: 100px;
-    }
+@media screen and (max-width: 1200px) {
+  .offerCoursesList {
+    padding: 5px 15px;
+    gap: 100px;
+  }
 }
 
-@media screen and (max-width:500px) {
-
-    .offerCoursesList {
-        padding: 5px 15px;
-        gap: 20px;
-    }
+@media screen and (max-width: 500px) {
+  .offerCoursesList {
+    padding: 5px 15px;
+    gap: 20px;
+  }
 }
