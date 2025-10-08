@@ -6,6 +6,16 @@
   position: relative;
   background-color: #010101;
 }
+
+.element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: radial-gradient(at center top, #09c60d -15%, #00000000 25%);
+  z-index: 1;
+}
 .landingBackTexture {
   position: absolute;
   top: 0;
@@ -158,9 +168,8 @@
   -webkit-backdrop-filter: blur(5px);
   display: inline-block;
 }
+
 .offerCourses {
-  position: absolute;
-  bottom: 20px;
   width: 100%;
   overflow-x: scroll;
 }

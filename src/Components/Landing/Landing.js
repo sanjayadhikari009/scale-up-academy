@@ -55,6 +55,7 @@ const Landing = () => {
   return (
     <>
       <div className="landingPage">
+        <div className="element"></div>
         <div className="landingBackTexture">
           <img src="/texture.png" alt="background-texture" />
         </div>{" "}
@@ -86,15 +87,15 @@ const Landing = () => {
             <a href="/">Enroll Now</a>
           </div>
         </div>
-        <div className="offerCourses">
-          <div className="offerCoursesList">
-            {OfferCourses.map((course, index) => (
-              <div key={index} className="coursesOffer">
-                <div className="circleOffer"></div>
-                {course.courseName}
-              </div>
-            ))}
-          </div>
+      </div>
+      <div className="offerCourses">
+        <div className="offerCoursesList">
+          {OfferCourses.map((course, index) => (
+            <div key={index} className="coursesOffer">
+              <div className="circleOffer"></div>
+              {course.courseName}
+            </div>
+          ))}
         </div>
       </div>
     </>
