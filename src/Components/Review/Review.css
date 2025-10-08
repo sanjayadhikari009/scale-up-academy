@@ -1,0 +1,166 @@
+.reviewPage{
+    width: 100%;
+    padding: 50px 0;
+    background-color: #010101;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.reviewTitle{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.reviewTitle p{
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+.reviewTitle p:nth-of-type(2){
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.studentsImages{
+    display: flex;
+    justify-content: center;
+}
+.studentsImages .listImage{
+    width: fit-content;
+    margin-left: 10px;
+}
+.listImage img {
+  margin-left: -10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  padding: 2px;
+  background-color: white;
+  position: relative; /* ✅ Required for z-index to work */
+  transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.listImage .active{
+    background-color: #09C60D;
+    transform: scale(1.1);
+    
+}
+
+.listReviews {
+  display: flex;
+  width: 100%;
+  overflow-x: auto; 
+}
+.listReviews::-webkit-scrollbar {
+  display: none;
+}
+
+
+.reviewBox {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  min-width: max-content;
+  align-items: center;
+}
+.reviewBox .active{
+    background-color: #0c0c0c;
+    border: 1px dashed #09C60D;
+    border-radius: 8px;
+    /* opacity: 0.5; */
+}
+.reviewBox .notactive{
+  opacity: 0.3;
+}
+
+.review {
+  width: 340px;
+  height: 190px;
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: sans-serif;
+}
+
+.quote {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.info .name {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Bomstad Display',sans-serif;
+  font-weight: 500;
+}
+
+.info .title {
+  font-size: 16px;
+  color: #667085;
+  margin: 0;
+  padding: 0;
+  font-family: 'Bomstad Display',sans-serif;
+  font-weight: 400;
+}
+
+.review1{
+    width: 400px;
+    height: 100px;
+    background-color: #000000;
+}
+.review2{
+    width: 400px;
+    height: 140px;
+    background-color: #000000;
+}
+
+
+.changeIndex{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: calc(50% - 100px);
+}
+.changeIndex .left,.right{
+    color: white;
+    font-size: 30px;
+}
+.changeIndex .left:hover,.right:hover{
+}
+
+.changeIndex .left:hover,.right:hover{
+    color: #09C60D;
+    cursor: pointer;
+}
+.changeIndex .left{
+    rotate: 180deg;
+}

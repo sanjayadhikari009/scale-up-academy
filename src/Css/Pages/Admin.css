@@ -1,0 +1,29 @@
+.AdminPage{
+    width: 100%;
+    min-height: 100vh;
+}
+.AdminPage .adminNav{
+    display: flex;
+    height: 50px;
+    width: 80%;
+    padding: 0 10%;
+    align-items: center;
+    justify-content:space-between;
+    background-color: black;
+}
+.AdminPage .adminNav .adminLeft span{
+    font-size: 25px;
+    cursor: pointer;
+    color: #7B7B7B;
+}
+.AdminPage .adminNav .adminLeft span:first-child{
+    color: #09C60D;
+}
+.adminRight a{
+    padding: 6px 30px;
+    background-color: red;
+    background-color: #09C60D;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+}

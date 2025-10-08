@@ -1,0 +1,12 @@
+export {default as NavBar} from "./NavBar/NavBar";
+export {default as Cource} from "./CoursesPage/Cource";
+export {default as GetReady} from "./Ctabanner/Ctabanner";
+export {default as Footer} from "./Footer/Footer";
+export {default as CoursePage} from "./CoursesPage/CoursePage";
+export {default as Introduction} from "./Introduction/Introduction";
+export {default as AboutBox} from "./AboutBox/AboutBox";
+export {default as Blog} from "./Blog/Blog";
+export {default as Review} from "./Review/Review";
+export {default as Landing} from "./Landing/Landing";
+export {default as Map} from "./GoogleMap/Map";
+export {default as Gallary} from "./Gallary/Gallary";

@@ -1,0 +1,197 @@
+.navigationbar {
+    width: 80%;
+    padding: 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    font-family: 'Bomstad Display', sans-serif;
+}
+
+/* Left Navigation Bar */
+.navigationbar .leftNav {
+    width: 20%;
+    display: flex;
+    justify-content: left;
+}
+
+.leftNav img {
+    cursor: pointer;
+    height: 48px;
+}
+
+/* Middle Navigation Bar */
+.navigationbar .middleNav {
+    width: 60%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoImgMiddle img {
+    width: 15px;
+    height: 15px;
+    display: none;
+}
+
+
+
+.navigationbar .middleNav .Links {
+    display: flex;
+    width: fit-content;
+    gap: 20px;
+    align-items: center;
+    padding: 9px 19px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
+    border-radius: 25px;
+    transition: 1s;
+    border: 1px solid rgba(255, 255, 255, 0.227);
+    
+}
+
+.middleNav .Links a:not(.middleNavEnroll, .noScroll) {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.middleNav .Links .active {
+    color: #09c60d;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.middleNavEnroll {
+    color: #09c60d;
+    text-decoration: none;
+    line-height: 20px;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    margin-top: -2px;
+}
+
+.middleNavEnroll img {
+    width: 20px;
+}
+
+.noScroll {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* Right Navigation Bar */
+.navigationbar .rightNav {
+    width: 20%;
+    display: flex;
+    justify-content: right;
+}
+
+.rightNav .EnrollNow {
+    display: flex;
+}
+
+.rightNav .EnrollNow a {
+    text-decoration: none;
+    display: flex;
+    color: #ffffff;
+    gap: 5px;
+    align-items: center;
+    font-weight: 400;
+}
+
+.rightNav .EnrollNow a img {
+    width: 24px;
+    height: 24px;
+    margin-top: -0px;
+    display: flex;
+    rotate: 0;
+    fill: red;
+}
+
+
+/* Background Blur */
+.backgroundBlur {
+    position: absolute;
+    width: 400px;
+    top: -200px;
+    background: radial-gradient(circle,
+            #09c60d 50%,
+            rgba(9, 198, 13, 0.8) 40%,
+            rgba(9, 198, 13, 0.6) 30%,
+            rgba(9, 198, 13, 0.4) 20%,
+            rgba(9, 198, 13, 0.2) 10%,
+            rgba(9, 198, 13, 0) 0%);
+
+}
+
+/* Scroll Link Nav */
+.scrollLinkNav,
+.noScroll {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    height: 20px;
+    width: fit-content;
+    transition: 0.5s;
+}
+
+.scrollLinkNav span:nth-of-type(1) {
+    color: white;
+    transition: 0.5s;
+}
+
+.scrollLinkNav span:nth-of-type(2) {
+    position: absolute;
+    color: #09c60d;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.scrollLinkNav:hover span:nth-of-type(2) {
+    margin-top: 0px;
+}
+
+.scrollLinkNav:hover span:nth-of-type(1) {
+    margin-top: -20px;
+}
+
+
+/* Responsive Navigation Bar */
+@media screen and (max-width:900px) {
+
+    /* Hide Both Side and Middle 100% */
+    .navigationbar .leftNav,
+    .navigationbar .rightNav {
+        display: none;
+        width: 0%;
+    }
+
+    .navigationbar .middleNav {
+        width: 100%;
+    }
+
+    .logoImgMiddle img {
+        display: block;
+    }
+    .middleNavEnroll{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:440px) {
+    /* Reduce Gap of Middle Nav Links */
+    .navigationbar .middleNav .Links{
+        gap: 10px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+}

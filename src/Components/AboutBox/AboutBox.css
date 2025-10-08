@@ -1,0 +1,282 @@
+.AboutBoxes {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    max-height: 500vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxrow{
+    display: grid;
+}
+.AboutBox {
+    overflow: hidden;
+    position:relative;
+    height: 300px;
+        border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.AboutBox img{
+    object-position: center;
+}
+/* Row 1 */
+.boxsRow1
+.AboutBox:nth-of-type(1){
+    background-color: white;
+}
+.boxsRow1
+.AboutBox:nth-of-type(2){
+    border: 1px solid transparent;
+    background-color: #09C60D;
+}
+.AboutBox:nth-of-type(2) img{
+    width: 100%
+    
+}
+.boxsRow1
+.AboutBox:nth-of-type(3){
+    border: 1px solid transparent;
+    border-left: 0.1px solid rgba(255, 255, 255, 0.692);
+    border-top: 0.1px solid rgba(255, 255, 255, 0.526);
+}
+.boxsRow1
+.AboutBox:nth-of-type(3) img{
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.AboutBox:nth-of-type(3) .textAbout{
+    /* background-color: red; */
+    bottom: 20px;
+    width: 80%;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+}
+.AboutBox:nth-of-type(3) .textAbout .boxPattern{
+    width: 60px;
+    height: 10px;
+    display: flex;
+    /* background-color: red; */
+}
+.AboutBox:nth-of-type(3) .textAbout .boxPattern span{
+    width: 30px;
+    height: 8px;
+    background-color: #09C60D;
+}
+.AboutBox:nth-of-type(3) .textAbout .boxPattern span:nth-of-type(2){
+    width: 30px;
+    height: 8px;
+    background-color: rgb(255, 255, 255);
+}
+.AboutBox:nth-of-type(3) .textAbout p{
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.AboutBox:nth-of-type(3) .textAbout p span{
+    background-color: #09C60D;
+    padding:0 1px;
+    border-radius: 5px;
+}
+/* Row 2 */
+.boxrow2
+.AboutBox:nth-of-type(1) .textAbout{
+    display: flex;
+    width: 80%;
+    padding: 0 10%;
+    flex-direction: column;
+}
+.boxrow2
+.AboutBox:nth-of-type(1) .textAbout img{
+    width: 29px;
+    height: 29px;
+    /* border-radius: 50%; */
+    /* background-color: red; */
+    margin-right: 3.5px;
+    margin-top: -1.5px;
+}
+.outImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(245, 245, 245, 0.322);
+    border-radius: 100%;
+}
+.AboutBox:nth-of-type(1) .textAbout p{
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.AboutBox:nth-of-type(1) .textAbout p span{
+    background-color: #09C60D;
+    border-radius: 2px;
+    padding: 0 1px;
+}
+.boxrow2
+.AboutBox:nth-of-type(1){
+    border: 1px solid transparent;
+    border-left: 1px solid rgba(255, 255, 255, 0.515);
+    border-top: 1px solid rgba(255, 255, 255, 0.515);
+}
+.boxrow2
+.AboutBox:nth-of-type(1) img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.boxrow2
+.AboutBox:nth-of-type(2){
+    background-color: white;
+}
+.boxrow2
+.AboutBox:nth-of-type(2) img{
+    width: 90%;
+    height: auto;
+    object-position: center;
+}
+
+
+/* Row 3 */
+.boxrow3
+.AboutBox:nth-of-type(1) .textAbout{
+    padding: 0 5%;
+    width: 90%;
+    bottom: 10px;
+}
+.boxrow3
+.AboutBox:nth-of-type(1) .textAbout p{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    padding: 0;
+    font-family: 'Whyte Inktrap', sans-serif;
+    line-height: 20px;
+    z-index: 1;
+}
+.boxOverlay{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.026),rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.36));
+}
+.boxrow3
+.AboutBox:nth-of-type(1){
+    border: 1px solid transparent;
+    border-left: 1px solid rgba(255, 255, 255, 0.515);
+    border-top: 1px solid rgba(255, 255, 255, 0.515);
+    border-right: 1px solid rgba(255, 255, 255, 0.515);
+}
+.boxrow3
+.AboutBox:nth-of-type(1) img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.boxrow3
+.AboutBox:nth-of-type(2){
+    border: 1px solid transparent;
+    border-left: 1px solid rgba(255, 255, 255, 0.515);
+    border-top: 1px solid rgba(255, 255, 255, 0.515);
+    border-right: 1px solid rgba(255, 255, 255, 0.515);
+}
+.boxrow3
+.AboutBox:nth-of-type(2){
+    background-color: black;
+}
+.boxrow3
+.AboutBox:nth-of-type(2) img{
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.boxrow3
+.AboutBox:nth-of-type(2){
+    background-color: black;
+}
+
+.boxrow3
+.AboutBox:nth-of-type(3){
+    border: 1px solid transparent;
+    border-left: 1px solid rgba(255, 255, 255, 0.515);
+    border-top: 1px solid rgba(255, 255, 255, 0.515);
+    /* border-right: 1px solid rgba(255, 255, 255, 0.515); */
+}.boxrow3 .AboutBox:nth-of-type(3) {
+    position: relative; /* important for ::after positioning */
+    overflow: hidden; /* keeps fade within image area */
+}
+
+.boxrow3 .AboutBox:nth-of-type(3) img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.boxrow3 .AboutBox:nth-of-type(3)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%; /* adjust fade height */
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    pointer-events: none;
+}
+
+.textAbout{
+    position: absolute;
+    bottom: 2px;
+}
+.Logo{
+    display: none;
+    position: absolute;
+}
+.boxHeight{
+    height: 460px;
+}
+.boxHeight2{
+    margin-top: -160px;
+    height: 460px;
+}
+.boxsRow1{
+    gap: 1rem;
+    grid-template-columns: 1fr 1.2fr 1fr;
+}
+.boxrow2{
+    margin-top: -140px;
+    gap: 1rem;
+    grid-template-columns: 1fr 1.2fr 1fr;
+}
+.boxrow3{
+    grid-template-columns: 1.4fr 0.8fr 1fr;
+    gap: 1rem;
+    margin-top: 20px;
+}
+.boxrow
+
+
+.boxHide{
+    display: none;
+}
+

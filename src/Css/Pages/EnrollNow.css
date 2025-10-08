@@ -1,0 +1,210 @@
+.EnrollnowPage {
+    min-height: 100vh;
+    background-color: #050013;
+    display: flex;
+    justify-content: center;
+}
+
+.EnrollnowPage .formEnrollNow {
+    margin-top: 20px;
+    padding: 0;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: fit-content;
+}
+
+.formEnrollNow .bannerImage {
+    width: 100%;
+    height: 250px;
+    border: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bannerImage img {
+    width: 100%;
+    height: auto;
+}
+
+.aboutForm {
+    width: 98%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0 1%;
+    background-color: white;
+}
+
+.aboutForm .backgroundColorBlue {
+    width: 120%;
+    margin-left: -10%;
+    height: 20px;
+
+    background-color: #09c60d;
+}
+
+.aboutForm h2 {
+    margin-left: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.aboutForm p {
+    margin-left: 10px;
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif
+}
+
+.aboutForm h3 {
+    margin-bottom: 5px;
+}
+
+.aboutForm ul {
+    margin-top: 0px;
+}
+
+.inputBox {
+    width: 610px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+.inputBox .InputTitle {
+    color: red;
+    font-family: "Poppins", sans-serif;
+    margin: 10px 0;
+}
+
+.InputTitle span:first-child {
+    color: black;
+}
+
+.errInputBox {
+    border: 2px solid red;
+}
+
+.inputBox input {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #5f6368;
+    transition: 0.5s;
+}
+.inputBox select{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #5f6368;
+    border-radius: 3px;
+    color: #5f6368;
+}
+.inputBox select:focus{
+    outline: none;
+}
+.inputBox select option{
+    padding: 10px;
+
+}
+.inputBox input:focus {
+    outline: none;
+    border-bottom: 2px solid #000000;
+}
+
+.InputError {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    color: red;
+    height: 20px;
+}
+
+.formEnrollNow button {
+    padding: 10px 40px;
+    width: fit-content;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-bottom: 100px;
+    background-color: #09c60d;
+    color: white;
+    border: 2px solid #09c60d;
+    transition: 1s;
+    cursor: pointer;
+}
+.formEnrollNow button:hover{
+    background-color: transparent;
+    color: white;
+}
+
+@media screen and (max-width:670px) {
+    .EnrollnowPage .formEnrollNow {
+        padding: 0;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: fit-content;
+    }
+
+    .inputBox {
+        width: 450px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        border: 2px solid transparent;
+    }
+}
+
+
+
+@media screen and (max-width:520px) {
+    .EnrollnowPage .formEnrollNow {
+        padding: 0;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: fit-content;
+    }
+
+    .inputBox {
+        width: 360px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        border: 2px solid transparent;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .EnrollnowPage .formEnrollNow {
+        padding: 0;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: fit-content;
+    }
+
+    .inputBox {
+        width: 260px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        border: 2px solid transparent;
+        padding-right: 0;
+    }
+
+    .inputBox input {
+        width: 240px;
+        padding: 5px;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #5f6368;
+        transition: 0.5s;
+    }
+}

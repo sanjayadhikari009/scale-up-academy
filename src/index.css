@@ -1,0 +1,145 @@
+body {
+  overflow-x: hidden;
+  height: fit-content;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'Bomstad Display';
+    src: url('./Font/bomstad-display/Bomstad-Display/WOFF-WOFF2/BomstadDisplay-Regular.woff2') format('woff2'),
+         url('./Font/bomstad-display/Bomstad-Display/WOFF-WOFF2/BomstadDisplay-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+/* Black */
+@font-face {
+    font-family: 'Bomstad Display';
+    src: url('./Font/bomstad-display/Bomstad-Display/WOFF-WOFF2/BomstadDisplay-Black.woff2') format('woff2'),
+         url('./Font/bomstad-display/Bomstad-Display/WOFF-WOFF2/BomstadDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Bomstad Display';
+    src: url('./Font/bomstad-display/Bomstad-Display/WOFF-WOFF2/BomstadDisplay-Bold.woff2') format('woff2'),
+         url('./Font/bomstad-display/Bomstad-Display/WOFF-WOFF2/BomstadDisplay-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Extra Bold */
+@font-face {
+    font-family: 'Bomstad Display';
+    src: url('./Font/bomstad-display/Bomstad-Display/WOFF-WOFF2/BomstadDisplay-ExtraBold.woff2') format('woff2'),
+         url('./Font/bomstad-display/Bomstad-Display/WOFF-WOFF2/BomstadDisplay-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Extra light */
+@font-face {
+    font-family: 'Bomstad Display';
+    src: url('./Font/bomstad-display/Bomstad-Display/WOFF-WOFF2/BomstadDisplay-ExtraLight.woff2') format('woff2'),
+         url('./Font/bomstad-display/Bomstad-Display/WOFF-WOFF2/BomstadDisplay-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Light */
+@font-face {
+    font-family: 'Bomstad Display';
+    src: url('./Font/bomstad-display/Bomstad-Display/WOFF-WOFF2/BomstadDisplay-Light.woff2') format('woff2'),
+         url('./Font/bomstad-display/Bomstad-Display/WOFF-WOFF2/BomstadDisplay-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'Bomstad Display';
+    src: url('./Font/bomstad-display/Bomstad-Display/WOFF-WOFF2/BomstadDisplay-Medium.woff2') format('woff2'),
+         url('./Font/bomstad-display/Bomstad-Display/WOFF-WOFF2/BomstadDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Semi Bold */
+@font-face {
+    font-family: 'Bomstad Display';
+    src: url('./Font/bomstad-display/Bomstad-Display/WOFF-WOFF2/BomstadDisplay-SemiBold.woff2') format('woff2'),
+         url('./Font/bomstad-display/Bomstad-Display/WOFF-WOFF2/BomstadDisplay-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Semi Thin */
+@font-face {
+    font-family: 'Bomstad Display';
+    src: url('./Font/bomstad-display/Bomstad-Display/WOFF-WOFF2/BomstadDisplay-Thin.woff2') format('woff2'),
+         url('./Font/bomstad-display/Bomstad-Display/WOFF-WOFF2/BomstadDisplay-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* Agency font */
+@font-face {
+    font-family: 'Agency Font';
+    src: url('./Font/agency-technology/Agency.woff2') format('woff2'),
+         url('./Font/agency-technology/Agency.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Whyte Inktrap */
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('./Font/whyte-inktrap/WhyteInktrap-Bold.woff2') format('woff2'),
+         url('./Font/whyte-inktrap/WhyteInktrap-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('./Font/whyte-inktrap/WhyteInktrap-Medium.woff2') format('woff2'),
+         url('./Font/whyte-inktrap/WhyteInktrap-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('./Font/whyte-inktrap//WhyteInktrap-Light.woff2') format('woff2'),
+         url('./Font/whyte-inktrap/WhyteInktrap-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

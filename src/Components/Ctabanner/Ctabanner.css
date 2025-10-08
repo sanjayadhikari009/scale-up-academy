@@ -1,0 +1,301 @@
+.ctabannerPage {
+  width: 80%;
+  background-color: #010101;
+  padding: 100px 10%;
+  height: 300px;
+  position: relative;
+}
+
+.ctaBanner {
+  display: flex;
+  flex-direction: column;
+  background-color: #0f0f0f;
+  /* background: linear-gradient(to bottom, #1A1A1A, #28472814); */
+  width: calc(100% - 150px);
+  padding: 55px 75px;
+  position: relative;
+  gap: 25px;
+}
+
+.ctaInfo {
+  display: flex;
+  z-index: 10;
+}
+
+.ctadesc {
+  display: flex;
+  width: 80%;
+  gap: 20px;
+}
+
+.ctadesc .texts {
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+}
+
+.ctadesc .downArrow {
+  margin-top: auto;
+  width: 70px;
+}
+
+.ctadesc .texts p {
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: 'Agency Font', sans-serif;
+  font-weight: 400;
+}
+
+.ctadesc .texts p:nth-of-type(1) {
+  color: #09C60D;
+  font-size: 32px;
+  line-height: 35px;
+}
+
+.ctadesc .texts p:nth-of-type(2) {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: -0px;
+}
+
+
+.ctaBtn {
+  display: flex;
+  width: 30%;
+}
+
+.ctaBtn a {
+  margin-top: auto;
+  margin-left: auto;
+  width: 191px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  border: 1px solid transparent;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  height: 60px;
+  color: white;
+}
+
+.boxAnimation {
+  position: relative;
+  overflow: hidden;
+}
+
+.boxAnimation .text {
+  z-index: 10;
+  font-size: 24px;
+  position: relative;
+}
+
+.boxAnimation span {
+  width: 250px;
+  left: -240px;
+  height: 200px;
+  background-color: #09C60D;
+  position: absolute;
+  z-index: 0;
+  border-top-right-radius: 10px;
+  rotate: 90deg;
+  transition: 0.2s;
+  top: 20px;
+}
+
+.boxAnimation:hover span {
+  left: -20px;
+  rotate: 0deg;
+  top: 0px;
+}
+
+.ctaAddress {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  z-index: 10;
+}
+
+.ctaAddress p {
+  margin: 0;
+  font-family: 'Whyte Inktrap',sans-serif;
+  font-size: 26px;
+}
+
+.number {
+  display: flex;
+  gap: 20px;
+  font-size: 26px;
+  font-weight: 700;
+
+}
+
+.number .box {
+  background-color: #111;
+  border-radius: 20px;
+  padding: 10px 0;
+  height: fit-content;
+  width: 70px;
+  box-shadow: inset  -3px 3px 2px rgba(255, 255, 255, 0.416); 
+  border: 1px solid rgba(255, 255, 255, 0.081);
+}
+
+.ctaAddress {
+  color: white;
+  font-size: 26px;
+  font-weight: 400;
+  font-family: 'Whyte Inktrap', sans-serif;
+}
+
+/* For Gradient Overlay */
+.linear-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: transparent;
+  --dot-size: 2px;
+  /* Change this value to increase/decrease dot size */
+  --dot-spacing: 20px;
+  /* Spacing between dots */
+  --dot-color: rgba(122, 200, 127, 0.467);
+  /* Dot color */
+}
+
+.linear-gradient::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background-image: radial-gradient(circle, var(--dot-color) var(--dot-size), transparent var(--dot-size));
+  background-size: var(--dot-spacing) var(--dot-spacing);
+  background-position: calc(var(--dot-spacing) / 2) calc(var(--dot-spacing) / 2);
+  mask: linear-gradient(to bottom,
+      transparent 0%,
+      rgba(0, 0, 0, 0.2) 10%,
+      rgba(0, 0, 0, 0.5) 40%,
+      rgba(0, 0, 0, 0.8) 70%,
+      rgba(0, 0, 0, 1) 100%);
+  -webkit-mask: linear-gradient(to bottom,
+      transparent 0%,
+      rgba(0, 0, 0, 0.2) 10%,
+      rgba(0, 0, 0, 0.5) 40%,
+      rgba(0, 0, 0, 0.8) 70%,
+      rgba(0, 0, 0, 1) 100%);
+}
+
+/* Examples of different dot sizes */
+.small-dots {
+  --dot-size: 1px;
+}
+
+.medium-dots {
+  --dot-size: 3px;
+}
+
+.large-dots {
+  --dot-size: 5px;
+}
+
+.extra-large-dots {
+  --dot-size: 8px;
+}
+
+/* Example with different spacing */
+.wide-spacing {
+  --dot-spacing: 60px;
+}
+
+.tight-spacing {
+  --dot-spacing: 25px;
+}
+
+.spant {
+  position: absolute;
+  width: 110%;
+  height: 2px;
+  top: 0;
+  margin-left: -10%;
+  border-top: 1px dashed #2e3032;
+}
+
+.spanb {
+  position: absolute;
+  width: 110%;
+  height: 2px;
+  bottom: -3px;
+  margin-left: -10%;
+  border-top: 1px dashed #2e3032;
+}
+
+.spanr {
+  position: absolute;
+  border-bottom: 1px dashed #2e3032;
+  height: 2px;
+  width: 320px;
+  margin-right: -162px;
+  right: 0;
+  margin-top: 79px;
+  rotate: 90deg;
+}
+
+.forClean {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.forClean p:nth-of-type(1) {
+  font-size: 36px;
+  font-weight: 800;
+  color: #09C60D;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.forClean p:nth-of-type(2) {
+  text-align: center;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.forClean button {
+  padding: 15px 40px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+}
+
+.backImgEnrollNow {
+  position: absolute;
+  width: 300px;
+  margin-left: calc(50% - 300px);
+  z-index: 0;
+  opacity: 0.1;
+  top: -110px;
+}
+

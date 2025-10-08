@@ -1,0 +1,100 @@
+.underPage{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../Photos/saready.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.underPage h1{
+    font-size: 80px;
+    color: whitesmoke;
+    margin: 10px 0;
+}
+.underPage .subText{
+    font-size: 50px;
+    color: white;
+}
+
+.aboutUnder{
+    position: absolute;
+    display: flex;
+    gap: 100px;
+    bottom: 20px;
+    align-items: center;
+}
+.aboutUnder img{
+    width: 400px;
+}
+.aboutUnder a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.address{
+    color: white;
+}
+
+@media screen and (max-width:1030px) {
+    .aboutUnder{
+    position: absolute;
+    display: flex;
+    gap: 50px;
+    bottom: 20px;
+    align-items: center;
+}
+.aboutUnder img{
+    width: 300px;
+}
+}
+@media screen and (max-width:830px) {
+    .aboutUnder{
+    position: absolute;
+    display: flex;
+    gap: 50px;
+    bottom: 20px;
+    align-items: center;
+}
+.aboutUnder img{
+    width: 100px;
+}
+.aboutUnder p{
+    font-size: 15px;
+}
+}
+@media screen and (max-width:630px) {
+
+    .underPage h1{
+    font-size: 50px;
+    color: whitesmoke;
+    margin: 10px 0;
+}
+.underPage .subText{
+    font-size: 30px;
+    color: white;
+}
+    .aboutUnder{
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    bottom: 0px;
+    align-items: center;
+    flex-direction: column;
+}
+.aboutUnder img{
+    width: 50%;
+    margin:0 50%;
+
+
+}
+.address{
+    text-align: center;
+}
+.aboutUnder p{
+    font-size: 15px;
+}
+}

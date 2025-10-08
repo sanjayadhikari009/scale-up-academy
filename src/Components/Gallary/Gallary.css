@@ -1,0 +1,209 @@
+.gallerySection{
+    width: 100%;
+    padding: 100px 0;
+    background-color: #010101;
+}
+.galleryTitle{
+    color: white;
+    font-size: 18px;
+    width: 80%;
+    padding: 0 10%;
+}
+.lifeatScaleup{
+    padding: 0 10%;
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+}
+.hr{
+    width: 80%;
+    margin: 10px 10%;
+    height: 0.5px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.gallerySpike{
+    height: 80px;
+    padding: 0 20px;
+    width: calc(100% - 40px);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 8;
+    background-color: #0e0e10;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.scale{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.scale .circle{
+    width: 10px;
+    height: 10px;
+    background-color: #09C60D;
+}
+.scale {
+    color: #a4a4a4e1;
+    font-size: 16px;
+     font-family: "Manrope", sans-serif;
+     font-weight: 400;
+}
+
+
+.gallery{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    overflow-x: scroll;
+}
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.galleryRow1{
+    display: flex;
+    gap: 13px;
+    width: 100%;
+    margin-left: 10%;
+    flex-shrink: 0;
+}
+.imgDiv{
+    flex-shrink: 0;
+    width: 387px;
+    height: 354px;
+    background-color: white;
+    border-radius: 17px;
+    overflow: hidden;
+}
+.imgDiv img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+.imgDivs{
+    overflow: hidden;
+}
+.imgDivs img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+.galleryRow1 .imgDiv:nth-of-type(1),.imgDiv:nth-of-type(4){
+    width: 387px;
+    height: 354px;
+}
+.galleryRow1 .imgDiv:nth-of-type(3){
+    width: 290px;
+    height: 293px;
+}
+.galleryRow1
+.imgDiv:nth-of-type(2),.imgDiv:nth-of-type(5){
+    height:  512px;
+    width: 487px;
+}
+.galleryRow1
+.imgDiv:nth-of-type(3),.imgDiv:nth-of-type(6){
+    height: 293px;
+}
+
+.gallaryRow2{
+    display: flex;
+    align-items: last baseline;
+    width: 100%;
+}
+
+.galleryRow2{
+    display: flex;
+    gap: 13px;
+    align-items: baseline;
+    height: 130px;
+    margin-top: -140px;
+    padding-bottom: 10px;
+    flex-shrink: 0;
+    margin-left: 10%;
+}
+.galleryRow2 .imgDivs{
+    flex-shrink: 0;
+    margin-top: -68px;
+    border-radius: 20px;
+}
+.galleryRow2 .imgDivs:nth-of-type(1),.imgDivs:nth-of-type(4){
+    height: 143px;
+    width: 387px;
+    background-color: red;
+}
+.galleryRow2 .imgDivs:nth-of-type(2),.imgDivs:nth-of-type(5){
+    height: 0px;
+    width: 486px;
+    background-color: red;
+}
+.galleryRow2 .imgDivs:nth-of-type(3),.imgDivs:nth-of-type(6){
+    height: 205px;
+    width: 290px;
+    background-color: red;
+}
+
+.gallaryText{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    margin-left: 10%;
+    font-weight: 700;
+}
+
+
+.forNiddleG{
+    background-color: #010101;
+}
+
+
+
+
+.star-circle-3 {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .star-3 {
+            position: relative;
+            width: 40px;
+            height: 40px;
+        }
+
+        .star-ray {
+            position: absolute;
+            width: 1px;
+            height: 20px;
+            background: linear-gradient(to top, #09C60D, transparent);
+            /* box-shadow: 0 0 8px #00ff88, 0 0 16px #00ff88; */
+            top: 50%;
+            left: 50%;
+            transform-origin: 50% 100%;
+            border-radius: 1px 1px 0 0;
+        }
+
+        .star-ray:nth-child(1) { transform: translate(-50%, -100%) rotate(0deg); }
+        .star-ray:nth-child(2) { transform: translate(-50%, -100%) rotate(45deg); }
+        .star-ray:nth-child(3) { transform: translate(-50%, -100%) rotate(90deg); }
+        .star-ray:nth-child(4) { transform: translate(-50%, -100%) rotate(135deg); }
+        .star-ray:nth-child(5) { transform: translate(-50%, -100%) rotate(180deg); }
+        .star-ray:nth-child(6) { transform: translate(-50%, -100%) rotate(225deg); }
+        .star-ray:nth-child(7) { transform: translate(-50%, -100%) rotate(270deg); }
+        .star-ray:nth-child(8) { transform: translate(-50%, -100%) rotate(315deg); }
+
+
+        @media screen and (max-width:900px) {
+            .gallerySpike{
+                display: none;
+            }
+        }
