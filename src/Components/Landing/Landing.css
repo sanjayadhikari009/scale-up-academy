@@ -6,6 +6,16 @@
   position: relative;
   background-color: #010101;
 }
+
+.element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: radial-gradient(at center top, #09c60d -15%, #00000000 25%);
+  z-index: 1;
+}
 .landingBackTexture {
   position: absolute;
   top: 0;
@@ -158,9 +168,8 @@
   -webkit-backdrop-filter: blur(5px);
   display: inline-block;
 }
+
 .offerCourses {
-  position: absolute;
-  bottom: 20px;
   width: 100%;
   overflow-x: scroll;
 }
@@ -227,5 +236,205 @@
   .offerCoursesList {
     padding: 5px 15px;
     gap: 20px;
+  }
+}
+
+svg {
+  filter: drop-shadow(0 10px 40px rgba(8, 8, 8, 0.1));
+}
+
+g[clip-path*="clip0"] {
+  animation: sway1 8s ease-in-out infinite;
+  transform-origin: 35px 590px;
+}
+
+g[clip-path*="clip2"] {
+  animation: sway2 8.5s ease-in-out infinite 0.2s;
+  transform-origin: 100px 560px;
+}
+
+g[clip-path*="clip4"] {
+  animation: sway3 8.2s ease-in-out infinite 0.4s;
+  transform-origin: 170px 530px;
+}
+
+g[clip-path*="clip6"] {
+  animation: sway4 8.8s ease-in-out infinite 0.6s;
+  transform-origin: 235px 500px;
+}
+
+g[clip-path*="clip8"] {
+  animation: sway5 8.3s ease-in-out infinite 0.8s;
+  transform-origin: 300px 470px;
+}
+
+g[clip-path*="clip10"] {
+  animation: sway6 8.6s ease-in-out infinite 1s;
+  transform-origin: 370px 440px;
+}
+
+g[clip-path*="clip12"] {
+  animation: sway7 8.4s ease-in-out infinite 1.2s;
+  transform-origin: 435px 410px;
+}
+
+g[clip-path*="clip14"] {
+  animation: sway8 8.7s ease-in-out infinite 1.4s;
+  transform-origin: 505px 380px;
+}
+
+g[clip-path*="clip16"] {
+  animation: sway9 8.5s ease-in-out infinite 1.6s;
+  transform-origin: 570px 350px;
+}
+
+g[clip-path*="clip18"] {
+  animation: sway10 8.3s ease-in-out infinite 1.8s;
+  transform-origin: 635px 320px;
+}
+
+g[clip-path*="clip20"] {
+  animation: sway11 8.8s ease-in-out infinite 2s;
+  transform-origin: 705px 290px;
+}
+
+path[fill*="1DAF40"] {
+  animation: glow 3s ease-in-out infinite;
+}
+
+@keyframes sway1 {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes sway2 {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-2.5deg);
+  }
+}
+
+@keyframes sway3 {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2.2deg);
+  }
+}
+
+@keyframes sway4 {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-1.8deg);
+  }
+}
+
+@keyframes sway5 {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2.3deg);
+  }
+}
+
+@keyframes sway6 {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-2.1deg);
+  }
+}
+
+@keyframes sway7 {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(1.9deg);
+  }
+}
+
+@keyframes sway8 {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-2.4deg);
+  }
+}
+
+@keyframes sway9 {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes sway10 {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-2.2deg);
+  }
+}
+
+@keyframes sway11 {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2.5deg);
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    filter: brightness(1);
+    opacity: 0.8;
+  }
+  50% {
+    filter: brightness(1.3);
+    opacity: 1;
+  }
+}
+
+svg {
+  animation: fadeIn 5.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
