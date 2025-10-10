@@ -1,8 +1,8 @@
 .test {
   display: flex;
-  transform: rotate(-20deg);
+  /* transform: rotate(-20deg); */
   postion: relative;
-  /* animation: test-scale 8s ease-in-out infinite alternate; */
+  animation: test-scale 10s ease-in-out infinite alternate;
 }
 .test-content {
   width: 50px;
@@ -113,10 +113,10 @@
 @keyframes test-scale {
   0%,
   100% {
-    transform: scaleX(1);
+    transform: rotate(-20deg) scaleX(1);
   }
   50% {
-    transform: scaleX(1.2);
+    transform: rotate(-20deg) scaleX(1.2);
   }
 }
 
