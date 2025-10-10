@@ -1,5 +1,6 @@
 import "./Landing.css";
 import Landingsvg from "./Landingsvg";
+import Test from "./Test";
 
 const Landing = () => {
   const OfferCourses = [
@@ -60,7 +61,8 @@ const Landing = () => {
           <img src="/texture.png" alt="background-texture" />
         </div>{" "}
         <div className="landingBackImage">
-          <Landingsvg />
+          {/* <Landingsvg /> */}
+          <Test />
         </div>
         <div className="landingTextWrapper">
           <div className="landingText">
